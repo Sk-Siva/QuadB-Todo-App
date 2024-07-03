@@ -8,7 +8,7 @@ A simple TODO application built with React. Users can add, edit, delete, and mar
 - **View Tasks**: Display all added tasks in a list format.
 - **Delete Task**: Each task has a delete button to remove it from the list.
 - **Edit Task**: Each task has an edit button to allow inline editing.
-- **Mark as Completed**: Each task can be marked as completed, which will strike through the text.
+- **Mark as Completed**: Each task can be marked as completed.
 - **Local Storage**: Tasks are saved to local storage to persist data on page reload.
 
 ## Installation
