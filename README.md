@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# TODO Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple TODO application built with React. Users can add, edit, delete, and mark tasks as completed. The tasks are persisted in local storage.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Add Task**: Users can input a task into a text field and add it to the list.
+- **View Tasks**: Display all added tasks in a list format.
+- **Delete Task**: Each task has a delete button to remove it from the list.
+- **Edit Task**: Each task has an edit button to allow inline editing.
+- **Mark as Completed**: Each task can be marked as completed, which will strike through the text.
+- **Local Storage**: Tasks are saved to local storage to persist data on page reload.
 
-### `npm start`
+## Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```plaintext
+todo-app/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── components/
+│   │   ├── TaskInput.js
+│   │   └── TaskList.js
+│   ├── App.js
+│   ├── App.css
+│   └── index.js
+├── package.json
+└── README.md
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Components
+App Component
+State:
+tasks: An array of task objects, each with text and completed properties.
+Methods:
+componentDidMount: Loads tasks from local storage.
+componentDidUpdate: Saves tasks to local storage.
+addTask: Adds a new task to the list.
+deleteTask: Deletes a task from the list.
+toggleCompletion: Toggles the completion status of a task.
+setTasks: Sets the entire tasks array.
+TaskInput Component
+Props:
+addTask: A function to add a new task.
+State:
+task: The current task input value.
+Methods:
+handleChange: Updates the task input value.
+handleSubmit: Calls addTask with the current task input value and clears the input.
+TaskList Component
+Props:
+tasks: An array of task objects.
+deleteTask: A function to delete a task.
+setTasks: A function to set the entire tasks array.
+toggleCompletion: A function to toggle the completion status of a task.
+State:
+editingIndex: The index of the task currently being edited.
+editedTask: The current value of the task being edited.
+Methods:
+startEditing: Sets the editingIndex and editedTask.
+handleEditChange: Updates the editedTask state.
+saveTask: Saves the edited task and resets the editing state.
+Styles
+The project includes basic styling in App.css and index.css. Feel free to customize the styles to your liking.
 
-### `npm test`
+Contributing
+Contributions are welcome! Please feel free to submit a pull request or open an issue to improve the application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+License
+This project is licensed under the MIT License. See the LICENSE file for more details.
