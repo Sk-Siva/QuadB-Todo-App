@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/QuadB-Todo-App/static/css/main.59fdeb2f.css",
+    "main.js": "/QuadB-Todo-App/static/js/main.08461b93.js",
+    "static/js/453.ac79db8d.chunk.js": "/QuadB-Todo-App/static/js/453.ac79db8d.chunk.js",
+    "index.html": "/QuadB-Todo-App/index.html",
+    "main.59fdeb2f.css.map": "/QuadB-Todo-App/static/css/main.59fdeb2f.css.map",
+    "main.08461b93.js.map": "/QuadB-Todo-App/static/js/main.08461b93.js.map",
+    "453.ac79db8d.chunk.js.map": "/QuadB-Todo-App/static/js/453.ac79db8d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.59fdeb2f.css",
+    "static/js/main.08461b93.js"
+  ]
+}
